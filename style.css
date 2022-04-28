@@ -2,10 +2,9 @@
     margin: 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-
 }
 
-/* -----------------    Barre de navigation    --------------- */
+/* -----------------    Header / Barre de navigation    --------------- */
 
 header {
     display: flex;
@@ -32,4 +31,31 @@ header li {
     color: #FFFFFF;
     font-weight: bold;
     
+}
+
+/* ---------------    Main    ---------------*/
+
+main {
+    background-color: #DDDBCB;
+}
+
+main img {
+    width: 94%;
+    height: 65vh;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h1 {
+    text-align: center;
+    color: #0094AA;
+    font-size: 30px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+main div {
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
