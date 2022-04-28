@@ -33,7 +33,7 @@ header li {
     
 }
 
-/* ---------------    Main    ---------------*/
+/* ---------------    Main    --------------- */
 
 main {
     background-color: #DDDBCB;
@@ -58,4 +58,21 @@ main div {
     width: 94%;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+/* ---------------    footer    --------------- */
+
+footer section {
+    display: flex;
+    justify-content: flex-end;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #0094AA;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }
