@@ -64,13 +64,7 @@ header li {
     border-radius: 0 5px 5px 0;
     user-select: none;
 }
-  
-/* Place the "forward button" to the right */
-.forward {
-    right: 0;
-    border-radius: 4px 0 0 4px;
-  }
-  
+   
 /*when the user hovers,add a black background with some little opacity */
 .Back:hover, .forward:hover {
     background-color: rgba(0,0,0,0.8);
@@ -78,18 +72,19 @@ header li {
   
 /* Caption Info */
 .Info {
-    color: #e3e3e3;
+    color: #931621;
     font-size: 16px;
+    font-weight: bold;
     padding: 10px 14px;
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     width: 100%;
     text-align: center;
 }
   
 /* Worknumbering (1/3 etc) */
 .MessageInfo {
-    color: #f2f2f3;
+    color: #FFFFFF;
     font-size: 14px;
     position: absolute;
     padding-left: 4%;
@@ -107,14 +102,14 @@ header li {
     height: 8px;
     width: 8px;
     margin: 0 3px;
-    background-color: #acc;
+    background-color:#0094AA;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.5s ease;
 }
   
 .enable, .dots:hover {
-    background-color: #717161;
+    background-color: #112846;
 }
   
 /* Faint animation */
