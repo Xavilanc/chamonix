@@ -54,9 +54,8 @@ header li {
     color: #931621;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 14px;
+    padding: 2px 14px;
     position: absolute;
-    bottom: 15px;
     width: 100%;
     text-align: center;
 }
