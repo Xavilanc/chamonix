@@ -2,10 +2,16 @@
     margin: 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-
+    box-sizing: border-box;
 }
 
-/* -----------------    Barre de navigation    --------------- */
+a {
+    outline: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* -----------------    Header / Barre de navigation    --------------- */
 
 header {
     display: flex;
@@ -32,4 +38,76 @@ header li {
     color: #FFFFFF;
     font-weight: bold;
     
+}
+/* ---------------    main    ---------------*/
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position:relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+  
+/* Images invisibles par défault */
+.Containers {
+    display: none;
+}
+  
+/* Description de l'image */
+.Info {
+    color: #931621;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 14px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #DDDBCB;
+}
+
+main img {
+    width: 100%;
+    height: 65vh;
+}
+
+h1 {
+    text-align: center;
+    color: #0094AA;
+    font-size: 30px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+main div {
+    width: 100%;
+}
+
+.welcome {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* ---------------    footer    --------------- */
+
+footer {
+    background-color: #0094AA;
+    margin: 0;
+}
+
+footer section {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #0094AA;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
 }
