@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /* -----------------    Header / Barre de navigation    --------------- */
 
 header {
