@@ -59,54 +59,6 @@ header li {
     width: 100%;
     text-align: center;
 }
-  
-/* numérotation 1 / 4 etc...) */
-.MessageInfo {
-    color: #FFFFFF;
-    font-size: 14px;
-    position: absolute;
-    padding-left: 4%;
-    top: 0;
-}
-  
-/* boutons circulaires de défilement */
-
-.menudots {
-    text-align: center;
-}
-
-.dots {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 3px;
-    background-color:#0094AA;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s ease;
-}
-  
-.enable, .dots:hover {
-    background-color: #112846;
-}
-  
-/* Faint animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.4s;
-    animation-name: fade;
-    animation-duration: 1.4s;
-}
-  
-@-webkit-keyframes fade {
-    from {opacity: .5}
-    to {opacity: 2}
-}
-  
-@keyframes fade {
-    from {opacity: .5}
-    to {opacity: 2}
-}
 
 main {
     background-color: #DDDBCB;
