@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
@@ -155,8 +156,8 @@ main div {
 
 .quefaire1 img {
     border-radius: 15px;
-    width: 30%;
-    height: fit-content;
+    width: 25%;
+    height: 25%;
 }
 
 .quefaire1 .soustitre {
@@ -187,6 +188,7 @@ main div {
 
 /* ---- spécificités page détails sites remarquables ---- */
 
+
 .detail1 .soustitre2 {
     color: #ca2e55;
     font-size: 22px;
@@ -210,8 +212,8 @@ main div {
 .detail1 img,
 .detailphoto img {
     border-radius: 15px;
-    width: 35%;
-    height: fit-content;
+    height: 40vh;
+    width: 90%;
 }
 
 .detail1 .paragraphe {
@@ -228,6 +230,19 @@ main div {
     justify-content: space-evenly;
 }
 
+.photodescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.photodescrip div {
+    font-size: 18px;
+    font-weight: 800;
+    color:black;
+    text-align: center;
+}
 
 /* ---------------    footer    --------------- */
 
