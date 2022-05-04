@@ -13,12 +13,29 @@
 <body>
     <header>
         <img src="assets/logosite.png" alt="Logo du site avec une marmotte sur fond de paysage de montagne" />
-        <ul>
+        <ul class="desktop-nav">
             <li><a href="index.html">ACCUEIL</a></li>
             <li><a href="decouvrir.html">DÉCOUVRIR</a></li>
-            <li><a href="quefaire.html">QUE FAIRE, QUE VOIR ?</a></li>
-            <li><a href="infosutiles.html">INFOS UTILES</a></li>
+            <li><a href="quefaire.html">ACTIVITES</a></li>
+            <li>INFOS UTILES</li>
         </ul>
+        <div class="mobiletitle">ACTIVITES</div>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">&times;</a>
+            <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="decouvrir.html">DÉCOUVRIR</a></li>
+                <li><a href="quefaire.html">ACTIVITES</a></li>
+                <li><a href="#">INFOS UTILES</a></li>
+            </ul>
+        </div>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span class="firstligne"></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
     </header>
     <main>
         <h3>Montenvers - Mer de Glace</h3>
