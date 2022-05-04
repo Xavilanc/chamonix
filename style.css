@@ -12,6 +12,10 @@ a {
     color: #FFFFFF;
 }
 
+body {
+    background-color: #DDDBCB;
+}
+
 /* -----------------    Header / Barre de navigation    --------------- */
 
 header {
@@ -84,7 +88,7 @@ h1, h2 {
     text-align: center;
     color: #0094AA;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 800;
     padding-top: 3vh;
     padding-bottom: 3vh;
 }
@@ -96,6 +100,10 @@ h3 {
     font-weight: bold;
     padding-top: 3vh;
     padding-bottom: 3vh;
+}
+
+main {
+    margin: 2%;
 }
 
 main div {
@@ -160,10 +168,12 @@ main div {
 
 .quefaire1 .paragraphe {
     display: flex;
+    color: black;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1%;
+    margin: 2%;
 }
 
 .quefaire1:hover {
@@ -189,6 +199,12 @@ main div {
     flex-direction: row;
     align-items: center;
     padding: 3%;
+}
+
+.detail1,
+.detailphoto {
+    margin: 2%;
+    background-color: #DDDBCB;
 }
 
 .detail1 img,
