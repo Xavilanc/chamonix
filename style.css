@@ -409,4 +409,8 @@ footer div {
     .mobiletitle {
         display: block;
     }
+
+    .photodescrip div {
+        font-size: 12px;
+    }
 }
