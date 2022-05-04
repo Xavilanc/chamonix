@@ -1,14 +1,20 @@
 * {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 a {
     outline: none;
     text-decoration: none;
     color: #FFFFFF;
+}
+
+body {
+    background-color: #DDDBCB;
 }
 
 /* -----------------    Header / Barre de navigation    --------------- */
@@ -36,9 +42,87 @@ header ul {
 
 header li {
     color: #FFFFFF;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
+
+header a:hover {
+    color:#0094AA;
+}
+
+.mobiletitle {
+    display: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    top: 13px;
+    bottom: 13px;
+    left: 60px;
+    right: 35%;
+}
+
+.burger-icon span { /* icone menu burger */
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #FFFFFF;
+    margin: 7px 0;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+
+.burger-icon .firstligne {
+    margin-top: 10px;
+}
+
+.sidenav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Sidenav menu */
+.sidenav {
+    height: 50%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -260px;
+    background-color:#112846;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidenav a:hover {
+    color:#0094AA;
+}
+  
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+  
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+}
+  
+
 /* ---------------    main    ---------------*/
 
 /* Slideshow container */
@@ -79,9 +163,22 @@ h1, h2 {
     text-align: center;
     color: #0094AA;
     font-size: 30px;
+    font-weight: 800;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+h3 {
+    text-align: center;
+    color:#931621;
+    font-size: 30px;
     font-weight: bold;
     padding-top: 3vh;
     padding-bottom: 3vh;
+}
+
+main {
+    margin: 2%;
 }
 
 main div {
@@ -123,6 +220,104 @@ main div {
     padding: 1%;
 }
 
+/* ---- spécificités page que faire ---- */
+.quefaire1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+}
+
+.quefaire1 img {
+    border-radius: 15px;
+    width: 25%;
+    height: 25%;
+}
+
+.quefaire1 .soustitre {
+    color: #931621;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.quefaire1 .paragraphe {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+.quefaire1:hover {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.quefaire1 a {
+    color: #931621;
+}
+
+/* ---- spécificités page détails sites remarquables ---- */
+
+
+.detail1 .soustitre2 {
+    color: #ca2e55;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.detail1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+}
+
+.detail1,
+.detailphoto {
+    margin: 2%;
+    background-color: #DDDBCB;
+}
+
+.detail1 img,
+.detailphoto img {
+    border-radius: 15px;
+    height: 40vh;
+    width: 90%;
+}
+
+.detail1 .paragraphe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.detailphoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.photodescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.photodescrip div {
+    font-size: 18px;
+    font-weight: 800;
+    color:black;
+    text-align: center;
+}
+
 /* ---------------    footer    --------------- */
 
 footer {
@@ -147,4 +342,71 @@ footer div {
     padding-top: 5px;
     text-align: left;
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+    .decou1,
+    .quefaire1,
+    .detailphoto,
+    .detail1 {
+        flex-direction: column;
+        padding: 0;
+    }
+    .decou1 img,
+    .quefaire1 img,
+    .detail1 img {
+        width: 80%;
+        height: 30vh;
+    }
+    .photodescrip img {
+        width: 100%;
+        height: 30vh;
+
+    }
+    .Containers img {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .decou1,
+    .quefaire1,
+    .detailphoto,
+    .detail1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .decou1 img,
+    .quefaire1 img,
+    .detail1 img {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .photodescrip img {
+        width: 100%;
+        height: 30vh;
+
+    }
+
+    .Containers img {
+        height: 30vh;
+    }
+    
+    .burger-icon span {
+        display: block;
+    }
+
+    .desktop-nav li {
+        display: none;
+    }
+
+    .sidenav ul {
+        display: contents;
+    }
+
+    .mobiletitle {
+        display: block;
+    }
 }
