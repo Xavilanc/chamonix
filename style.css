@@ -37,9 +37,13 @@ header ul {
 
 header li {
     color: #FFFFFF;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
+
+header a:hover {
+    color:#0094AA;
+}
+
 /* ---------------    main    ---------------*/
 
 /* Slideshow container */
@@ -160,6 +164,11 @@ main div {
     justify-content: center;
     align-items: center;
     padding: 1%;
+}
+
+.quefaire1:hover {
+    border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .quefaire1 a {
