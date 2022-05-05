@@ -201,8 +201,8 @@ main div {
 
 .decou1 img {
     border-radius: 15px;
-    width: 50%;
-    height: fit-content;
+    height: 50vh;
+    width: 95%;;
 }
 
 .decou1 .soustitre {
@@ -274,7 +274,7 @@ main div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 3%;
+    padding: 0%;
 }
 
 .detail1,
@@ -286,8 +286,8 @@ main div {
 .detail1 img,
 .detailphoto img {
     border-radius: 15px;
-    height: 40vh;
-    width: 90%;
+    height: 50vh;
+    width: 95%;
 }
 
 .detail1 .paragraphe {
@@ -295,7 +295,7 @@ main div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding: 0%;
 }
 
 .detailphoto {
@@ -316,6 +316,21 @@ main div {
     font-weight: 800;
     color:black;
     text-align: center;
+}
+
+.facile {
+    color: green;
+    font-weight: 900;
+}
+
+.moyenne {
+    color: red;
+    font-weight: 900;
+}
+
+.difficile {
+    color: black;
+    font-weight: 900;
 }
 
 /* ---------------    footer    --------------- */
@@ -412,5 +427,9 @@ footer div {
 
     .photodescrip div {
         font-size: 12px;
+    }
+
+    .paragraphe {
+        text-align: justify;
     }
 }
