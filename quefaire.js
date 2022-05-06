@@ -26,12 +26,15 @@ for(i = 0; i < upsizeImg.length; i++) {
   upsizeImg[i].addEventListener("click", function() {
     const imgBigger = document.createElement("img");
     const body = document.querySelector('body');
+    const main = document.querySelector("main")
+    main.classList.add("imgOpacity")
     imgBigger.src = srcImg;
     imgBigger.classList.add("imgBig");
     body.appendChild(imgBigger);
     imgBigger.onclick = imgRemove;
     function imgRemove () {
       imgBigger.remove("imgBig");
+      main.classList.remove("imgOpacity")
     }
   });
 }
