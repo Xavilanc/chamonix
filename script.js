@@ -37,7 +37,7 @@ function closeNav() {
 /* ---- agrandissement images au click */
 
 let upsizeImg = document.querySelectorAll(".imgtobig");
-for(i = 0; i < upsizeImg.length; i++) {
+for( let i = 0; i < upsizeImg.length; i++) {
   let srcImg = upsizeImg[i].src;
   upsizeImg[i].addEventListener("click", function() {
     const imgBigger = document.createElement("img");
