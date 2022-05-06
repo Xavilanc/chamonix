@@ -17,3 +17,21 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+/* ---- agrandissement images au click */
+
+let upsizeImg = document.querySelectorAll(".imgtobig");
+for(i = 0; i < upsizeImg.length; i++) {
+  let srcImg = upsizeImg[i].src;
+  upsizeImg[i].addEventListener("click", function() {
+    const imgBigger = document.createElement("img");
+    const body = document.querySelector('body');
+    imgBigger.src = srcImg;
+    imgBigger.classList.add("imgBig");
+    body.appendChild(imgBigger);
+    imgBigger.onclick = imgRemove;
+    function imgRemove () {
+      imgBigger.remove("imgBig");
+    }
+  });
+}
