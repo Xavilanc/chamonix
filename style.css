@@ -189,9 +189,9 @@ main {
     background-color: #DDDBCB;
 }
 
-main img {
+.Containers img {
     width: 100%;
-    height: 65vh;
+    height: 65%;
 }
 
 h1, h2 {
@@ -239,7 +239,7 @@ main div {
 
 .decou1 img {
     border-radius: 15px;
-    height: 50vh;
+    height: 50%;
     width: 95%;;
 }
 
@@ -326,9 +326,19 @@ main div {
     background-color: #DDDBCB;
 }
 
+/* ---- lien Youtube ---- */
+
+.youtube {
+    color:#0094AA;
+    font-weight:900;
+}
+
+.youtube:hover {
+    color:#931621;
+}
+
 iframe {
-    width: 94%;
-    height: 50vh;
+    border-radius: 15px;
 }
 
 /* ---- reglages de la taille des photos dans les sous pages activités ---- */
@@ -336,8 +346,12 @@ iframe {
 .detail1 img,
 .detailphoto img {
     border-radius: 15px;
-    height: 50vh;
+    height: fit-content;
     width: 95%;
+}
+
+.detailphoto {
+    padding: 0%;
 }
 
 /* ---- box paragraphe dans les sous pages activités ---- */
@@ -403,9 +417,6 @@ iframe {
 .youtube:hover {
     color:#931621;
 }
-iframe {
-    border-radius: 15px;
-}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -458,17 +469,17 @@ footer div {
     .quefaire1 img,
     .detail1 img {
         width: 80%;
-        height: 30vh;
+        height: 30%;
     }
 
     .photodescrip img {
         width: 100%;
-        height: 30vh;
+        height: 30%;
 
     }
 
     .Containers img {
-        height: 30vh;
+        height: 30%;
     }
     
     .burger-icon span {
