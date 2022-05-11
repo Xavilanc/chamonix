@@ -473,7 +473,7 @@ footer {
     margin: 0;
 }
 
-footer section {
+footer div {
     display: flex;
     justify-content: flex-end;
     width: 100%;
