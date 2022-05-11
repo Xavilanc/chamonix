@@ -42,14 +42,17 @@ for( let i = 0; i < upsizeImg.length; i++) {
 
 /* ---------------    scroll menu    ---------------*/
 
-//const header = document.querySelector("header");
-//let lastScrollTop = 0;
-//window.addEventListener("scroll", function(){
-//   let st = window.pageYOffset || document.documentElement.scrollTop;
-//   if (st > lastScrollTop){
-//    header.classList.add("scrollmenu");
-//   } else {
-//    header.classList.remove("scrollmenu");
-//   }
-//   lastScrollTop = st <= 0 ? 0 : st;
-//}, false);
+const header = document.querySelector("header");
+const main = document.querySelector("main");
+let lastScrollTop = 0;
+window.addEventListener("scroll", function(){
+   let st = window.pageYOffset || document.documentElement.scrollTop;
+   if (st > lastScrollTop){
+    header.classList.remove("scrollmenu");
+    header.classList.remove("mainscroll");
+   } else {
+    header.classList.add("scrollmenu");
+    main.classList.add("mainscroll");
+   }
+   lastScrollTop = st <= 0 ? 0 : st;
+}, false);
