@@ -430,7 +430,8 @@ iframe {
 }
 
 .paragraphe span {
-    color:#931621
+    color:#931621;
+    font-weight: 900;
 }
 
 .paragraphe a {
@@ -460,13 +461,13 @@ footer section {
 }
 
 footer img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     padding: 5px;
 }
 
 footer div {
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: left;
     color: #FFFFFF;
 }
