@@ -1,19 +1,3 @@
-/* ---------------    carrousel    ---------------*/
-let slidePosition = 0;
-SlideShow();
-
-function SlideShow() {
-  let i;
-  let slides = document.getElementsByClassName("Containers");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slidePosition++;
-  if (slidePosition > slides.length) {slidePosition = 1}
-  slides[slidePosition-1].style.display = "block";
-  setTimeout(SlideShow, 3000); // Change image every 3 seconds
-}
-
 /* ---------------    menu burger    ---------------*/
 
 let sidenav = document.getElementById("mySidenav");
@@ -33,6 +17,7 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
 
 /* ---- agrandissement images au click */
 
