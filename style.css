@@ -100,13 +100,13 @@ header a:hover {
 
 /* ---- Sidenav menu ---- */
 .sidenav {
-    height: 260px;
-    width: 260px;
+    height: 250px;
+    width: 220px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -260px;
-    background-color:#112846;
+    left: -220px;
+    background-color:#0094AA;
     padding-top: 60px;
     transition: left 0.5s ease;
   }
