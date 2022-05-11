@@ -218,6 +218,26 @@ main div {
     font-size: 20px;
 }
 
+.liveindex {
+    font-size: 22px;
+    color: #931621;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.titrerm {
+    font-size: 22px;
+    font-weight: 900;
+    color: #ca2e55;
+}
+
+.rm {
+    color: black;
+    font-weight: 900;
+    font-size: 22px;
+}
+
 .welcome {
     padding-left: 3%;
     padding-right: 3%;
@@ -486,6 +506,7 @@ footer div {
     .detail1 {
         flex-direction: column;
         padding: 0;
+        margin-bottom: 30px;
     }
 
     .decou1 img,
@@ -527,6 +548,11 @@ footer div {
 
     .paragraphe {
         text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .photodescrip {
+        margin-bottom: 40px;
     }
 
     .imgBig {
