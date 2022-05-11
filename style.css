@@ -174,7 +174,7 @@ header a:hover {
 .imgBig {
     z-index: 1;
     width: 70%;
-    height: 70vh;
+    height: auto;
     position: fixed;
     top: 10vh;
     left: 15%;
@@ -558,7 +558,7 @@ footer div {
     .imgBig {
         z-index: 1;
         width: 90%;
-        height: 30vh;
+        height: auto;
         position: fixed;
         top: 10vh;
         left: 5%;
