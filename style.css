@@ -1,11 +1,29 @@
 * {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/* -----------------    Barre de navigation    --------------- */
+a {
+    outline: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #DDDBCB;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------    HEADER    -------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* ---- box barre de navigation ---- */
 
 header {
     display: flex;
@@ -13,12 +31,16 @@ header {
     background-color: #112846;
 }
 
-header img /* logo */ {
+/* ---- logo ---- */
+
+header img {
     width: 50px;
     height: 50px;
     padding: 5px;
     border-radius: 15px;
 }
+
+/* ---- structure barre de navigation en mode desktop ---- */
 
 header ul {
     display: flex;
@@ -30,6 +52,601 @@ header ul {
 
 header li {
     color: #FFFFFF;
+    font-weight: bold;   
+}
+
+header a:hover {
+    color:#0094AA;
+}
+
+/* ---- titre sur barre de navigation en mode smartphone ---- */
+
+.mobiletitle {
+    display: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    top: 13px;
+    bottom: 13px;
+    left: 60px;
+    right: 35%;
+}
+
+/* ------------------------------------------- */
+/* --------------- menu burger --------------- */
+/* ------------------------------------------- */
+
+
+/* ---- icone menu burger ---- */
+.burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: #FFFFFF;
+    margin: 7px 0;
+    margin-right: 10px;
+    border-radius: 15px;
+  }
+
+.burger-icon .firstligne {
+    margin-top: 10px;
+}
+
+/* ---- menu burger invisible par défault en mode desktop ---- */
+.sidenav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+/* ---- Sidenav menu caché à gauche ---- */
+.sidenav {
+    height: 200px;
+    width: 220px;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -220px;
+    background-color:#0094AA;
+    padding-top: 20px;
+    transition: left 0.5s ease;
+  }
+
+/* ---- Sidenav menu links ---- */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidenav a:hover {
+    color:#112846;
+}
+  
+/* ---- pour faire apparaitre le sidenav menu ---- */
+.sidenav.active {
+    left: 0;
+}
+  
+/* ---- pour faire disparaitre le sidenav menu ---- */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+}
+  
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* ----------------------------------    MAIN    ---------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* ---- Slideshow container ---- */
+.slideshow-container {
+    width: 100%;
+    position:relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+  
+/* ---- Images invisibles par défault ---- */
+.Containers {
+    display: none;
+}
+  
+/* ---- Description de l'image ---- */
+.Info {
+    color: #931621;
+    font-size: 16px;
     font-weight: bold;
+    padding: 2px 14px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---- réglage taille des images du caroussel ---- */
+.Containers img {
+    width: 100%;
+    height: 65%;
+}
+
+/* --------------------------------------------------------- */
+/* --------------- agrandissement de l'image --------------- */
+/* --------------------------------------------------------- */
+
+/* --- class de l'image crée agrandie ----*/
+.imgBig {
+    z-index: 1;
+    width: 70%;
+    height: auto;
+    position: fixed;
+    top: 10vh;
+    left: 15%;
+    border-radius: 15px;
+}
+
+/* ---- class pour ajouter de l'opacity à l'arrière plan (main) ---- */
+.imgOpacity {
+    opacity: 0.33;
+}
+
+main {
+    background-color: #DDDBCB;
+    margin: 2%;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #0094AA;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+h3 {
+    text-align: center;
+    color:#931621;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+main div {
+    width: 100%;
+    font-size: 20px;
+}
+
+/* ---------------------------------------------------- */
+/* --------------- infos page d'accueil --------------- */
+/* ---------------------------------------------------- */
+
+/* ---- message d'accueil ---- */
+.welcome {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+/* ---- titre des infos live de la page d'accueil ---- */
+.liveindex {
+    font-size: 22px;
+    color: #931621;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.titrerm {
+    font-size: 22px;
+    font-weight: 900;
+    color: #ca2e55;
+}
+
+.rm {
+    color: black;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------- spécificités page découvrir ------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* ---- container avec 1 paragraphe et une photo, ou deux photos ---- */
+.decou1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+}
+
+/* ---- images dans le container decou1 ---- */
+.decou1 img {
+    border-radius: 15px;
+    height: 50%;
+    width: 95%;;
+}
+
+/* ---- titre du paragraphe ---- */
+.decou1 .soustitre {
+    color: #931621;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* ---- paragraphe dans decou1 ---- */
+.decou1 .paragraphe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------- spécificités page que faire ------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* ---- container avec 1 paragraphe et une photo, ou deux photos ---- */
+.quefaire1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3%;
+}
+
+/* ---- images dans le container quefaire1 ---- */
+.quefaire1 img {
+    border-radius: 15px;
+    width: 25%;
+    height: 25%;
+}
+
+.quefaire1 .soustitre {
+    color: #931621;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.quefaire1 .paragraphe {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin: 2%;
+}
+
+.quefaire1:hover {
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.quefaire1 a {
+    color: #931621;
+}
+/* -------------------------------------------------------------------------------- */
+/* ------------- spécificités sous pages activités et infos utiles ---------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* ---- titres des paragraphes des sous pages activités ---- */
+
+.detail1 .soustitre2 {
+    color: #ca2e55;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.detail1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0%;
+}
+
+.detail1,
+.detailphoto {
+    margin-bottom: 2%;
+    background-color: #DDDBCB;
+}
+
+/* ---- lien Youtube ---- */
+
+.youtube {
+    color:#0094AA;
+    font-weight:900;
+}
+
+.youtube:hover {
+    color:#931621;
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+/* ---- API Google Maps ---- */
+
+.googlemaps {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 60vh;
+}
+
+.googlemaps iframe {
+    width: 70%;
+    height: 100%;
+}
+
+/* ---- reglages de la taille des photos dans les sous pages activités ---- */
+
+.detail1 img,
+.detailphoto img {
+    border-radius: 15px;
+    height: fit-content;
+    width: 95%;
+}
+
+.detailphoto {
+    padding: 0%;
+}
+
+/* ---- box paragraphe dans les sous pages activités ---- */
+
+.detail1 .paragraphe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+/* ---- box contenant 2 sous box .photodescrip ---- */
+
+.detailphoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* ---- box contenant une photo + description de la photo ---- */
+
+.photodescrip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* ---- description de la photo dans le containeur .photodescrip ---- */
+
+.photodescrip div {
+    font-size: 18px;
+    font-weight: 800;
+    color:black;
+    text-align: center;
+}
+
+/* ---- classification niveau randonnées ---- */
+
+.facile {
+    color: green;
+    font-weight: 900;
+}
+
+.moyenne {
+    color: red;
+    font-weight: 900;
+}
+
+.difficile {
+    color: black;
+    font-weight: 900;
+}
+
+/* ---- lien Youtube ---- */
+
+.youtube {
+    color:#0094AA;
+    font-weight:900;
+}
+
+.youtube:hover {
+    color:#931621;
+}
+
+.paragraphe span {
+    color:#931621;
+    font-weight: 900;
+}
+
+.paragraphe a {
+    color: black;
+}
+
+.paragraphe a:hover {
+    color:#0094AA;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------ FOOTER ------------------------------------ */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #0094AA;
+    margin: 0;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    width: 100%;
+    background-color: #0094AA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer1 a {
+    color: #FFFFFF;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------- SMARPHONE DESIGN ------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .decou1,
+    .quefaire1,
+    .detailphoto,
+    .detail1 {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+
+    .decou1 img,
+    .quefaire1 img,
+    .detail1 img {
+        width: 80%;
+        height: 30%;
+    }
+
+    .photodescrip img {
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .Containers img {
+        height: 30%;
+    }
     
+    .burger-icon span {
+        display: block;
+    }
+
+    .desktop-nav li {
+        display: none;
+    }
+
+    .sidenav ul {
+        display: contents;
+    }
+
+    .mobiletitle {
+        display: block;
+    }
+
+    .photodescrip div {
+        font-size: 12px;
+    }
+
+    .paragraphe {
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .photodescrip {
+        margin-bottom: 40px;
+    }
+
+    .imgBig {
+        z-index: 1;
+        width: 90%;
+        height: auto;
+        position: fixed;
+        top: 10vh;
+        left: 5%;
+        border-radius: 15px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .googlemaps {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 30vh;
+    }
+
+    .googlemaps iframe {
+        width: 97%;
+        height: 100%;
+    }
+
+    .footer1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        background-color: #0094AA;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .footer1 div {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+    .footer1 a {
+        color: #FFFFFF;
+    }
+    
+    footer img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    /* ---- apparition menu au scroll haut en version mobile ---- */
+
+    .scrollmenu {
+        z-index: 1;
+        top: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    .mainscroll {
+        margin-top: 60px;
+    }
 }
