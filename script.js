@@ -2,18 +2,18 @@
 /* ---------------    carrousel    --------------- */
 /* ----------------------------------------------- */
 
-let slidePosition = 0;
+let slidePosition = 0; // initialisation à 0 de la position
 SlideShow();
 
 function SlideShow() {
   let i;
-  let slides = document.getElementsByClassName("Containers");
+  let slides = document.getElementsByClassName("Containers"); // Récupération des images
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none"; // Display none aux images récupérées
   }
   slidePosition++;
   if (slidePosition > slides.length) {slidePosition = 1}
-  slides[slidePosition-1].style.display = "block";
+  slides[slidePosition-1].style.display = "block"; // image en cours affichée
   setTimeout(SlideShow, 3000); // Change d'image toutes les 3 secondes
 }
 

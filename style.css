@@ -73,8 +73,12 @@ header a:hover {
     right: 35%;
 }
 
-/* ---- icone menu burger ---- */
+/* ------------------------------------------- */
+/* --------------- menu burger --------------- */
+/* ------------------------------------------- */
 
+
+/* ---- icone menu burger ---- */
 .burger-icon span {
     display: none;
     width: 35px;
@@ -90,7 +94,6 @@ header a:hover {
 }
 
 /* ---- menu burger invisible par défault en mode desktop ---- */
-
 .sidenav ul {
     display: none;
     list-style-type: none;
@@ -98,7 +101,7 @@ header a:hover {
     margin: 0;
   }
 
-/* ---- Sidenav menu ---- */
+/* ---- Sidenav menu caché à gauche ---- */
 .sidenav {
     height: 200px;
     width: 220px;
@@ -126,12 +129,12 @@ header a:hover {
     color:#112846;
 }
   
-/* Active class */
+/* ---- pour faire apparaitre le sidenav menu ---- */
 .sidenav.active {
     left: 0;
 }
   
-/* Close btn */
+/* ---- pour faire disparaitre le sidenav menu ---- */
 .sidenav .close {
     position: absolute;
     top: 0;
@@ -170,8 +173,17 @@ header a:hover {
     text-align: center;
 }
 
-/* ---- agrandissement de l'image ---- */
+/* ---- réglage taille des images du caroussel ---- */
+.Containers img {
+    width: 100%;
+    height: 65%;
+}
 
+/* --------------------------------------------------------- */
+/* --------------- agrandissement de l'image --------------- */
+/* --------------------------------------------------------- */
+
+/* --- class de l'image crée agrandie ----*/
 .imgBig {
     z-index: 1;
     width: 70%;
@@ -182,6 +194,7 @@ header a:hover {
     border-radius: 15px;
 }
 
+/* ---- class pour ajouter de l'opacity à l'arrière plan (main) ---- */
 .imgOpacity {
     opacity: 0.33;
 }
@@ -189,11 +202,6 @@ header a:hover {
 main {
     background-color: #DDDBCB;
     margin: 2%;
-}
-
-.Containers img {
-    width: 100%;
-    height: 65%;
 }
 
 h1, h2 {
@@ -219,6 +227,18 @@ main div {
     font-size: 20px;
 }
 
+/* ---------------------------------------------------- */
+/* --------------- infos page d'accueil --------------- */
+/* ---------------------------------------------------- */
+
+/* ---- message d'accueil ---- */
+.welcome {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+/* ---- titre des infos live de la page d'accueil ---- */
 .liveindex {
     font-size: 22px;
     color: #931621;
@@ -239,15 +259,11 @@ main div {
     font-size: 22px;
 }
 
-.welcome {
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
 /* -------------------------------------------------------------------------------- */
 /* -------------------------- spécificités page découvrir ------------------------- */
 /* -------------------------------------------------------------------------------- */
 
+/* ---- container avec 1 paragraphe et une photo, ou deux photos ---- */
 .decou1 {
     display: flex;
     flex-direction: row;
@@ -255,12 +271,14 @@ main div {
     padding: 3%;
 }
 
+/* ---- images dans le container decou1 ---- */
 .decou1 img {
     border-radius: 15px;
     height: 50%;
     width: 95%;;
 }
 
+/* ---- titre du paragraphe ---- */
 .decou1 .soustitre {
     color: #931621;
     font-size: 22px;
@@ -268,6 +286,7 @@ main div {
     padding-bottom: 20px;
 }
 
+/* ---- paragraphe dans decou1 ---- */
 .decou1 .paragraphe {
     display: flex;
     flex-direction: column;
@@ -280,6 +299,7 @@ main div {
 /* -------------------------- spécificités page que faire ------------------------- */
 /* -------------------------------------------------------------------------------- */
 
+/* ---- container avec 1 paragraphe et une photo, ou deux photos ---- */
 .quefaire1 {
     display: flex;
     flex-direction: row;
@@ -287,6 +307,7 @@ main div {
     padding: 3%;
 }
 
+/* ---- images dans le container quefaire1 ---- */
 .quefaire1 img {
     border-radius: 15px;
     width: 25%;
@@ -616,12 +637,13 @@ footer img {
         padding: 5px;
     }
 
+    /* ---- apparition menu au scroll haut en version mobile ---- */
+
     .scrollmenu {
         z-index: 1;
         top: 0;
         position: fixed;
         width: 100%;
-        transition: 0.5s;
     }
 
     .mainscroll {
