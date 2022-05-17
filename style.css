@@ -197,6 +197,7 @@ header a:hover {
 /* ---- class pour ajouter de l'opacity à l'arrière plan (main) ---- */
 .imgOpacity {
     opacity: 0.33;
+    pointer-events: none;
 }
 
 main {

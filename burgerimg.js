@@ -29,8 +29,8 @@ for( let i = 0; i < upsizeImg.length; i++) {
   upsizeImg[i].addEventListener("click", function() {
     const imgBigger = document.createElement("img"); // Crée une image imgBigger
     const body = document.querySelector('body'); // Balise body
-    const main = document.querySelector("main") // Balise main
-    main.classList.add("imgOpacity") // Ajoute de l'opacité au main
+    const main = document.querySelector("main"); // Balise main
+    main.classList.add("imgOpacity"); // Ajoute de l'opacité au main
     imgBigger.src = srcImg; // Ajoute l'url récuperée précédement à l'image crée précédement
     imgBigger.classList.add("imgBig"); // Ajout d'une class à la nouvelle image
     body.appendChild(imgBigger); // Ajoute l'image au body
